@@ -16,7 +16,7 @@
             :label="item.title"
             :name="item.name"
           >
-            {{item.content}}
+            <my-table></my-table>
           </el-tab-pane>
         </el-tabs>
         <div class="block">
@@ -36,7 +36,8 @@
 </template>
 
 <script>
-import Routes from '../../common/routes.vue'
+import Routes from '../../common/routes'
+import MyTable from '../../components/table'
 export default {
   data() {
     return {
@@ -51,7 +52,7 @@ export default {
         content: 'Tab 2 content'
       }],
       tabIndex: 2,
-      currentPage4: 4
+      currentPage4: 4,      
     }
   },
   methods: {
@@ -80,7 +81,8 @@ export default {
     }
   },
   components: {
-    Routes
+    Routes,
+    MyTable
   }
 }
 </script>
