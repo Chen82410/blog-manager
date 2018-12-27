@@ -101,6 +101,10 @@ export default {
         .col-common-div
           box-sizing border-box
           padding 0 20px
+    .block
+      position fixed
+      bottom 0
+      right 20px
 </style>
 
 <style lang="stylus">
